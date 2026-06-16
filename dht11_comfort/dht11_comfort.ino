@@ -28,13 +28,17 @@ ComfortResult classifyComfort(float heatIndex, float humidity) {
   } 
   else if (heatIndex < 32.0 && humidity < 70.0) {
     return {"Comfortable",     ".", "Ideal conditions"};
-  } else if (heatIndex < 32.0 && humidity >= 70.0) {
+  } 
+  else if (heatIndex < 32.0 && humidity >= 70.0) {
     return {"Humid",           ".", "High humidity — stay hydrated"};
-  } else if (heatIndex < 39.0) {
+  } 
+  else if (heatIndex < 39.0) {
     return {"Hot",             ".", "Stay hydrated, use fan"};
-  } else if (heatIndex < 46.0) {
+  } 
+  else if (heatIndex < 46.0) {
     return {"Very Hot",        ".", "Limit activity, drink water"};
-  } else {
+  } 
+  else {
     return {"Dangerously Hot", ".", "Risk of heat stroke!"};
   }
 }
@@ -88,7 +92,6 @@ void loop() {
   lastRead = now;
   float temperature = dht.readTemperature();   
   float humidity    = dht.readHumidity();
-
   if (isnan(temperature) || isnan(humidity)) {
     failCount++;
     Serial.printf("  [WARN] Read failed (#%d) — retrying next cycle\n", failCount);
@@ -147,5 +150,3 @@ void loop() {
     Serial.println("  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
   }
 }
-
-
