@@ -1,6 +1,7 @@
 # DHT11 Comfort Index Display 🌡️
 
-Reads temperature and humidity from a DHT11 sensor every 5 seconds, calculates heat index (feels like temperature), classifies comfort level into 7 zones, tracks session min/max, and displays a live formatted dashboard in Serial Monitor.
+Reads temperature and humidity from a DHT11 sensor every 5 seconds, calculates heat index (feels like temperature), 
+classifies comfort level into 7 zones, tracks session min/max, and displays a live formatted dashboard in Serial Monitor.
 
 ---
 
@@ -134,27 +135,6 @@ At the bottom blue status bar of VS Code:
 
 ---
 
-## Serial Monitor Output
-
-```
-╔══════════════════════════════════════════════╗
-║  Read #3     |  Uptime: 00:00:17             ║
-├──────────────────────────────────────────────┤
-║  Temperature  :  33.0 °C  ▲ NEW HIGH         ║
-║  Feels like   :  40.2 °C                     ║
-║  Humidity     : [███████░░░] 68%             ║
-├──────────────────────────────────────────────┤
-║  Status  : Hot                               ║
-║  Advice  : Stay hydrated, use fan            ║
-├──────────────────────────────────────────────┤
-║  Session min  :  32.0 °C   max :  33.0 °C   ║
-║  Humid  min   :  65.0 %    max :  68.0 %    ║
-║  Total reads  : 3                            ║
-╚══════════════════════════════════════════════╝
-```
-
----
-
 ## Comfort Zones
 
 | Zone | Heat Index | Humidity | Advice |
@@ -212,19 +192,10 @@ Chennai typically sits in these zones:
 
 ---
 
-## Possible Extensions
-
-- **OLED display** — show comfort zone on SSD1306 screen wired to SDA/SCL (GPIO21/22)
-- **MQTT publishing** — send readings to Mosquitto broker (Project 2 infrastructure)
-- **Web dashboard** — serve comfort data on ESP32's own web server like Project 1
-- **Fan control** — add a relay on GPIO26, auto-trigger when heat index exceeds 38°C
-- **Historical plot** — run Python serial logger for a day, plot comfort zone changes over 24 hours
-
----
-
 ## Built With
 
-- [Arduino IDE 2.x](https://www.arduino.cc/en/software) or [VS Code + Arduino Extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
+- [Arduino IDE 2.x](https://www.arduino.cc/en/software) or 
+  [VS Code + Arduino Extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
 - [DHT sensor library by Adafruit](https://github.com/adafruit/DHT-sensor-library)
 - [Adafruit Unified Sensor](https://github.com/adafruit/Adafruit_Unified_Sensor)
 - ESP32 Arduino Core by Espressif
