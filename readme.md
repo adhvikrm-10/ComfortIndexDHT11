@@ -39,8 +39,6 @@ GND           →    GND
 DATA (middle) →    GPIO 4
 ```
 
-> ⚠️ DHT11 uses 3.3V — NOT 5V like the PIR sensor
-
 ---
 
 ## Project Files
@@ -198,4 +196,3 @@ Chennai typically sits in these zones:
   [VS Code + Arduino Extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
 - [DHT sensor library by Adafruit](https://github.com/adafruit/DHT-sensor-library)
 - [Adafruit Unified Sensor](https://github.com/adafruit/Adafruit_Unified_Sensor)
-- ESP32 Arduino Core by Espressif
