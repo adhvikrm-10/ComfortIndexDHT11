@@ -1,4 +1,4 @@
-# DHT11 Comfort Index Display 🌡️
+# DHT11 Comfort Index Display 
 
 Reads temperature and humidity from a DHT11 sensor every 5 seconds, calculates heat index (feels like temperature), 
 classifies comfort level into 7 zones, tracks session min/max, and displays a live formatted dashboard in Serial Monitor.
