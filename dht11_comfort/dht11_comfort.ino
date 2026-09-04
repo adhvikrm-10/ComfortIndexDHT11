@@ -3,7 +3,7 @@
 #define DHT_PIN 4
 #define DHT_TYPE DHT11
 
-const unsigned long READ_INTERVAL_MS = 5000;
+const unsigned long READ_INTERVAL_MS = 15000;
 
 DHT dht(DHT_PIN, DHT_TYPE);
 
