@@ -126,7 +126,7 @@ At the bottom blue status bar of VS Code:
 - Release when percentage passes 10%
 
 ### Step 9 — Open Serial Monitor in VS Code
-- Press **Ctrl+Shift+P** → type `Arduino: Open Serial Monitor`
+- Press **Ctrl+Shift+M** → type `Arduino: Open Serial Monitor`
 - Set baud rate to **115200**
 - Press **EN button** on ESP32
 - Dashboard appears every 5 seconds
@@ -142,8 +142,8 @@ At the bottom blue status bar of VS Code:
 | Comfortable | 24–32°C | < 70% | Ideal conditions |
 | Humid | 24–32°C | ≥ 70% | High humidity — stay hydrated |
 | Hot | 32–39°C | any | Stay hydrated, use fan |
-| Very Hot | 39–46°C | any | Limit activity, drink water |
-| Dangerously Hot | > 46°C | any | Risk of heat stroke! |
+| Very Hot | 39–45°C | any | Limit activity, drink water |
+| Dangerously Hot | > 45°C | any | Risk of heat stroke! |
 
 ---
 
