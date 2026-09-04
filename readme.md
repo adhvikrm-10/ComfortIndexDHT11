@@ -13,7 +13,6 @@ classifies comfort level into 7 zones, tracks session min/max, and displays a li
 - Shows a live humidity bar visualiser
 - Tracks session minimum and maximum temperature and humidity
 - Flags new highs and lows as they occur
-- Outputs CSV DATA lines for Python serial logging
 - Alerts on dangerous heat conditions
 
 ---
@@ -144,26 +143,6 @@ At the bottom blue status bar of VS Code:
 | Hot | 32–39°C | any | Stay hydrated, use fan |
 | Very Hot | 39–45°C | any | Limit activity, drink water |
 | Dangerously Hot | > 45°C | any | Risk of heat stroke! |
-
----
-
-## CSV Data Line (for Python logging)
-
-Every read also prints a DATA line for the Python serial logger:
-
-```
-DATA,<uptime_seconds>,<temp>,<humidity>,<heatindex>,<comfort_label>
-```
-
-Example:
-```
-DATA,17,33.0,68.0,40.2,Hot
-```
-
-To log it with Python (reusing weather_logger.py from Project 1):
-```bash
-python weather_logger.py --mode serial --port COM14
-```
 
 ---
 
