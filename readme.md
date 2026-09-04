@@ -66,7 +66,7 @@ Connect 3 female-to-female jumper wires as shown in the wiring table above.
 
 ### Step 4 — Select board and port
 - **Tools → Board → ESP32 Arduino → ESP32 Dev Module**
-- **Tools → Port → COM14** (or whichever port your ESP32 is on)
+- **Tools → Port → COM15** (or whichever port your ESP32 is on)
 
 ### Step 5 — Upload
 - Click **→ Upload**
@@ -79,7 +79,7 @@ Connect 3 female-to-female jumper wires as shown in the wiring table above.
 - Set baud rate to **115200**
 - Press **EN button** on ESP32 to restart
 - Wait 2 seconds for sensor warmup
-- Dashboard prints every 5 seconds
+- Dashboard prints every 15 seconds
 
 ---
 
@@ -129,7 +129,7 @@ At the bottom blue status bar of VS Code:
 - Press **Ctrl+Shift+M** → type `Arduino: Open Serial Monitor`
 - Set baud rate to **115200**
 - Press **EN button** on ESP32
-- Dashboard appears every 5 seconds
+- Dashboard appears every 15 seconds
 
 ---
 
