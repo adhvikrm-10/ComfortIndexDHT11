@@ -99,6 +99,7 @@ Download from https://code.visualstudio.com/
 - Click **Install** and wait for it to finish
 - Or install manually from https://arduino.github.io/arduino-cli/
 
+
 ### Step 4 — Configure Arduino extension
 - Press **Ctrl+Shift+P** → type `Arduino: Board Manager`
 - Search `esp32` → install **esp32 by Espressif Systems**
